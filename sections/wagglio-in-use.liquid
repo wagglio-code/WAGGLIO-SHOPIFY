@@ -1,0 +1,116 @@
+<div class="wagglio-in-use-wrapper">
+  <div class="wagglio-in-use-header">
+    <h2 class="wagglio-in-use-title">WAGGLIO<sup>TM</sup> in use</h2>
+  </div>
+
+  <div class="wagglio-in-use-grid">
+    <div class="wagglio-image-card">
+      <img src="https://cdn.shopify.com/s/files/1/1035/2125/5789/files/99CC7D58-D258-42D2-8CCF-6FB760A79B01.png?v=1792054915" alt="Wagglio in use 1" loading="lazy" width="600" height="1066">
+    </div>
+    <div class="wagglio-image-card">
+      <img src="https://cdn.shopify.com/s/files/1/1035/2125/5789/files/2BC0440B-B223-4DA8-8B66-26E8300164E6.png?v=1792056294" alt="Wagglio in use 2" loading="lazy" width="600" height="1066">
+    </div>
+    <div class="wagglio-image-card">
+      <img src="https://cdn.shopify.com/s/files/1/1035/2125/5789/files/D1F38935-24FF-45B3-A95F-4F5C05E65FAE.png?v=1792056293" alt="Wagglio in use 3" loading="lazy" width="600" height="1066">
+    </div>
+    <div class="wagglio-image-card">
+      <img src="https://cdn.shopify.com/s/files/1/1035/2125/5789/files/16F33A73-ADFE-41F1-8FC0-C09EC90C5369.png?v=1792056293" alt="Wagglio in use 4" loading="lazy" width="600" height="1066">
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Container Margins & Padding Matching Upload 1 */
+  .wagglio-in-use-wrapper {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  /* Header Title Styling */
+  .wagglio-in-use-header {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+  .wagglio-in-use-title {
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #000000;
+    margin: 0;
+    line-height: 1.1;
+    display: inline-flex;
+    align-items: baseline;
+    text-transform: none;
+  }
+
+  .wagglio-in-use-title sup {
+    font-size: 0.42em;
+    top: -0.85em;
+    position: relative;
+    font-weight: 700;
+    margin-left: 1px;
+    margin-right: 6px;
+  }
+
+  /* 4-Column Grid with Narrow Gap Matching Upload 1 */
+  .wagglio-in-use-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem; /* Exact white gap spacing */
+    width: 100%;
+  }
+
+  /* Tall & Narrow Aspect Ratio (9:16) Matching Upload 1 */
+  .wagglio-image-card {
+    width: 100%;
+    aspect-ratio: 9 / 15.5; /* Makes images narrower and taller */
+    border-radius: 24px; /* Matching rounded corners */
+    overflow: hidden;
+    background-color: #f4f4f4;
+  }
+
+  .wagglio-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills card without stretching */
+    display: block;
+    border-radius: 24px;
+  }
+
+  /* Responsive layout for mobile / smaller screens */
+  @media screen and (max-width: 990px) {
+    .wagglio-in-use-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .wagglio-in-use-wrapper {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .wagglio-in-use-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Wagglio In Use",
+  "tag": "section",
+  "class": "section",
+  "presets": [
+    {
+      "name": "Wagglio In Use"
+    }
+  ]
+}
+{% endschema %}
